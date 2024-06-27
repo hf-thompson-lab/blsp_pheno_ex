@@ -72,7 +72,7 @@ job_stats <- CheckTaskStatus(token, 10, brief = TRUE)
 
 # Define a folder where you want to store the downloaded data
 outdir <- "data/raw/landsat"
-dir.create(outdir, showWarnings = FALSE)
+dir.create(outdir, showWarnings = FALSE, recursive = TRUE)
 
 # Copy the `job_id` and define it here:
 job_id <- ""
