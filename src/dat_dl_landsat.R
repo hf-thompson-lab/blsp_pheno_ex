@@ -6,7 +6,7 @@
 # ******************************************************************************
 library(data.table)
 # The following file will provide functions to communicate w/ AppEEARS
-source("AppEEARS_api.R")
+source("src/AppEEARS_api.R")
 
 
 
@@ -71,7 +71,7 @@ job_stats <- CheckTaskStatus(token, 10, brief = TRUE)
 # Once the job is done, run the following to download the data
 
 # Define a folder where you want to store the downloaded data
-outdir <- "data/raw/fia_dom_landsat"
+outdir <- "data/raw/landsat"
 dir.create(outdir, showWarnings = FALSE)
 
 # Copy the `job_id` and define it here:
